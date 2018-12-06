@@ -13,7 +13,7 @@ h1{
 
 img{
 	max-width: 1200px;
-	margin-left: 100px;
+	margin-left: 200px;
 }
 
 .top-images{
@@ -65,13 +65,13 @@ p{
 .header{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
-	margin-top: 140px;
+	margin-top: 350px;
 	margin-bottom: 100px;
 }
 
 #first{
-	width: 1250px;
-	margin-left: 100px;
+	width: 1400px;
+	margin-left: 250px;
 }
 
 #date{
