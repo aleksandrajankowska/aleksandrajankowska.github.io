@@ -1,0 +1,27 @@
+
+h1{
+	font-family: 'Lato', sans-serif;
+	margin-left: 30%;
+	/* top: 10%; */
+	font-size: 70px;
+	font-weight: lighter;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	margin-left: 55%;
+	/* top: 25%; */
+	font-size: 40px;
+	font-weight: lighter;
+
+}
+
+
+.fade-in{  
+	animation: fade-in 1.4s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: translate(400px, 0px)}
+    to {opacity: 1;}
+}

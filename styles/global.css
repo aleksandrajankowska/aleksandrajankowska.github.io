@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400');
+
+html{
+	font-family: 'Raleway', sans-serif;
+}
+/* I see that you are using margins to position your elements on the X/Y axis. Do realize that the specific task of the left, right, top, and bottom properties is position your elements set to an absolute, fixed, or relative position. */
+article{
+	line-height: 30px;
+	position: absolute;
+	left: 300px;
+	right: 100px;
+}
+
+script{
+	width:100%; 
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1400px;
+	
+}
+
+.content{
+	margin-left: 300px;
+}
+
+.socials{
+	margin-left: 300px;
+	margin-top: 20px;
+}
+
+.socials img{
+	width:50px;
+	height:50px;
+	margin: 10px;
+}
+
+/*source https://css-tricks.com/color-filters-can-turn-your-gray-skies-blue/*/
+
+.project-pic {
+  height: 230px;
+  width: auto;
+  margin: 10px;
+  
+  -webkit-filter: grayscale(100%) 
+          brightness(135%)
+          contrast(120%);
+  filter: grayscale(100%) 
+          brightness(135%)
+          contrast(120%);
+  
+  transition: filter 0.3s, box-shadow 0.3s;
+  -webkit-transition: filter 0.3s, -webkit-filter 0.3s, box-shadow 0.3s;
+}
+.project-link:hover .project-pic, 
+.project-link:focus .project-pic {
+  -webkit-filter: none;
+  filter: none;
+}
+
+#profilepic{
+	height: 400px;
+	display: inline;
+	margin-left: 300px;
+}
+
+#head{
+	margin-top: 120px;
+	font-family: 'Lato', sans-serif;
+	color: #f69679;
+	font-weight: lighter;
+	border-bottom: 1px solid #f69679;
+	display: block;
+	width: 200px;
+}
+
+#amarticle{
+	margin-left:700px;
+	line-height: 30px;
+	position: absolute;
+}
+
+
+

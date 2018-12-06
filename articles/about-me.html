@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!-- In looking over your CSS you are combining absolute positioning with flex boxes, causing your website to exist in 2 different universes. The better choice would be to pick one of these two universes, which would allow you to simplify your HTML and CSS. In the global.css you will see I disabled the 'display: flex' styling for the 'container' class style rule, resulting in no change to  your website's layout. This is evidence that your website primarily exist in the positioning universe. 
+    
+If you place the main element at the desire position, you will see that its child items will not need so much CSS to position them within the layout and you will additionally discover that you can simplify some of the HTML as well. It will initially require a bit of work to simplify your code. 
+
+Your website's visual layout is not overly complex, which is good. It has the Header & Nav elements place on the left and the Main element and its content on the right. BTW, you can assign CSS to the HTML5 semantic elements, which will help you with continuing to simplify your HTML. 
+    
+What will help you to ferret out unneeded CSS is to load your page in the Chrome browser and access the Developer Tools from the Developer submenu which is in the View menu. As you click on different HTML elements you will see its CSS properties being display: including properties that are directly applied to the element, those that are inherent to the element, and those that are inherited from descendent elements. The properties that are directly applied and inherited can be turned on and off to see the effect on your website's styling. You can also add in a property to see how that will effect the element, its adjacent elements, and its child elements. -->
+
+<!-- Notice below the 'content' DIV element has been commented out below and its class style rule has been assigned to the H1 with no change to this page's layout. Usually with a site that is minimally coded with HTML and CSS that would not be the case. -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>About Me</title>
+		<link rel="stylesheet" type="text/css" href="../styles/global.css">
+		<link rel="stylesheet" type="text/css" href="../styles/nav+image.css">
+		<style>
+			html{
+				background-image: url('../data/backgrounds/about-me-back.png');
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"><!-- I added a red outline to the the container class in the globa.css. Load your site into Chrome and notice how the DIV is displaying on the various pages in the 'articles' folder. -->
+			<header>
+				<a class="button" href="../index.html">Back</a>
+
+				<nav>
+					<ul>
+						<li>About Me</li>
+						<li><a href ="../articles/why-design.html">Why Design?</a></li>
+						<li><a href ="../articles/work.html">Work</a></li>
+						<li><a href ="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+		    <main>
+		    	<!-- <div class="content"> -->
+		    		<h1 id="head" class="content">About Me</h1> <!-- validator will mark this wrong but if i put it in header I can't make it work it creates a lot if issues. --> <!-- I put the H1 in the header and the HTML validator produced no error. However, in general if the validator is flagging something as an error then that should inform you that your approach needs to be rethought. The comment about placing the H1 in the header was based on the previous iteration of your website's design and may not be where it should be put based on this latest version of the design. See the note on line 25 of your index page.  -->
+		    	<!-- </div> -->
+		    	<div id = "amarticle">
+		    		<p>Hello, my name is Aleksandra Jankowska, but most people call me Ola.</p>
+						<ul>
+							<li><strong>Born:</strong> Warsaw, Poland</li>
+							<li><strong>Currently in:</strong> New York City, United States</li>
+							<li><strong>Education:</strong> The New School - Parsons School of Design
+								<p>Major: Design & Technology</p>
+								<p>Minors: Communication Design // Creative Entrepreneurship</p>
+							</li>
+							<li><strong>Hobbies:</strong> Video games, binge watching, tasting new things.</li>
+							<li><strong>Fun Fact:</strong> Has severe completionist complex.</li>
+						</ul>
+		    	</div>
+		    	<img id="profilepic" alt="me" src="../data/me.png">
+		    </main>
+		</div>
+		<footer><!-- Since your site no longer has footer content this footer element should be dropped. -->
+		</footer>
+	</body>
+</html>
