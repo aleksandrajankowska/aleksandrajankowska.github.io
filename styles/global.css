@@ -3,7 +3,7 @@
 html{
 	font-family: 'Raleway', sans-serif;
 }
-/* I see that you are using margins to position your elements on the X/Y axis. Do realize that the specific task of the left, right, top, and bottom properties is position your elements set to an absolute, fixed, or relative position. */
+
 article{
 	line-height: 30px;
 	position: absolute;
@@ -14,6 +14,10 @@ article{
 script{
 	width:500px;
 	height: 100px; 
+}
+
+span{
+	color: #f69679;
 }
 
 .container{
@@ -27,8 +31,8 @@ script{
 }
 
 .socials{
-	margin-left: 300px;
-	margin-top: 20px;
+	left: 300px;
+	top: 20px;
 }
 
 .socials img{
