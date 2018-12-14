@@ -1,7 +1,7 @@
 var size;
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(255);
   size = random(1, 5);
 
