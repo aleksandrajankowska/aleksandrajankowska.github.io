@@ -10,6 +10,7 @@ h1{
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 	font-size: 50px;
+	margin-top:150px;
 }
 
 img{
@@ -21,9 +22,10 @@ img{
 p{
 	margin-left: 100px;
 	margin-right: 100px;
-	line-height: 30px;
+	line-height: 40px;
 	margin-top: 45px;
 	margin-bottom: 45px;
+	font-size: 20px;
 }
 
 span{
@@ -35,7 +37,7 @@ iframe{
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	height: 600px;
+	height: 1000px;
 	display: block;
 	border: 0px;
 }
@@ -132,6 +134,16 @@ iframe{
 	margin-left: 110px;
 }
 */
+
+@media only screen and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3){
+
+p, #intro, li{
+	line-height: 70px;
+}
+
+}
 
 
 

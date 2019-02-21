@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+html{
+	background: no-repeat fixed center;
+	background-size:cover;
+}
 
 h1{
 	font-family: 'Lato', sans-serif;
 	margin-left: 30%;
 	/* top: 10%; */
-	font-size: 70px;
+	font-size: 5vw;
 	font-weight: lighter;
 }
 
@@ -11,11 +17,57 @@ h2{
 	font-family: 'Raleway', sans-serif;
 	margin-left: 55%;
 	/* top: 25%; */
-	font-size: 40px;
+	font-size: 3vw;
 	font-weight: lighter;
 
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
+li{
+	list-style-type: none; 
+}
+
+
+nav{
+	top: 300px;
+	left: 20px;
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	line-height: 2vw;
+	font-size: 1vw;
+	font-weight: lighter;
+}
+
+@media only screen and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3){
+	h1{
+		font-size: 140px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	h2{
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 100px;
+		font-size: 70px;
+	}
+
+	nav{
+		font-size: 100px;
+		line-height: 200px;
+		top: 37%;
+		left: 25%;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1025px){ 
 
 .fade-in{  
 	animation: fade-in 1.4s;
@@ -24,4 +76,6 @@ h2{
 @keyframes fade-in {
     from {opacity: 0; transform: translate(400px, 0px)}
     to {opacity: 1;}
+}
+
 }
